@@ -2025,3 +2025,220 @@ figure figcaption {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+/* Modern Portfolio Section Styles */
+#portfolio {
+  background-color: #f8fbff;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#portfolio .portfolio-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#portfolio .sub-header {
+  color: #007bff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: block;
+}
+
+#portfolio .main-title {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+#portfolio .main-title span {
+  color: #007bff;
+  position: relative;
+}
+
+#portfolio .main-title span::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: rgba(0, 123, 255, 0.1);
+  z-index: -1;
+}
+
+#portfolio .header-desc {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Modern Filters */
+#portfolio .modern-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+#portfolio .filter-btn {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 15px;
+}
+
+#portfolio .filter-btn i {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+#portfolio .filter-btn.active {
+  background: #007bff !important;
+  color: #fff !important;
+  border-color: #007bff !important;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+#portfolio .filter-btn:hover:not(.active) {
+  border-color: #007bff;
+  color: #007bff;
+  background: rgba(0, 123, 255, 0.05);
+}
+
+/* Portfolio Card Grid */
+#portfolio .portfolio-grid {
+  margin: 0 -15px;
+}
+
+#portfolio .item {
+  padding: 15px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#portfolio .portfolio-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+#portfolio .portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+#portfolio .card-image {
+  position: relative;
+  padding-top: 75%; /* Fixed 4:3 Aspect Ratio */
+  overflow: hidden;
+  width: 100%;
+}
+
+#portfolio .card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+#portfolio .portfolio-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+#portfolio .card-content {
+  padding: 18px 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  min-height: 90px; /* Force uniform height for the info bar */
+}
+
+#portfolio .card-info {
+  text-align: left;
+  flex: 1;
+  padding-right: 10px;
+}
+
+#portfolio .card-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #1a1a1a;
+  line-height: 1.3;
+  /* Limit to 2 lines to prevent height jumps */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#portfolio .category-tag {
+  color: #007bff;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+
+#portfolio .card-footer {
+  flex-shrink: 0;
+}
+
+#portfolio .arrow-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+#portfolio .portfolio-card:hover .arrow-link {
+  background: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #portfolio .main-title {
+    font-size: 36px;
+  }
+  #portfolio .card-content {
+    min-height: 80px;
+    padding: 15px;
+  }
+}
