@@ -25,10 +25,11 @@
   <link rel="stylesheet" href="css/aos.css">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modern-design.css">
 
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body class="dark-theme" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
   <div id="overlayer"></div>
@@ -51,105 +52,101 @@
     </div>
 
 
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">
-                <img src="images/cm-logo.png">
-              </a></h1>
-          </div>
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About Me</a></li>
-                <li class="has-children">
-                  <a href="#services" class="nav-link">Services</a>
-                  <ul class="dropdown">
-                    <li class="has-children">
-                      <a href="#">UI UX Design</a>
-                      <ul class="dropdown">
-                        <li><a href="#portfolio">FIGMA</a></li>
-                        <li><a href="#portfolio">WEB APP</a></li>
-                        <li><a href="#portfolio">Wireframe</a></li>
-                        <li><a href="#portfolio">Prototype</a></li>
-                        <li><a href="#portfolio">Mockups</a></li>
-                      </ul>
-                    </li>
-                    <li class="has-children">
-                      <a href="#">Web Design</a>
-                      <ul class="dropdown">
-                        <li><a href="#portfolio">PSD to HTML Conversion</a></li>
-                        <li><a href="#portfolio">Boostrap Website Design</a></li>
-                        <li><a href="#portfolio">Custom CSS Website Design</a></li>
-                      </ul>
-                    </li>
-                    <li class="has-children">
-                      <a href="#">Graphic Design</a>
-                      <ul class="dropdown">
-                        <li><a href="#portfolio">PhotoShop</a></li>
-                        <li><a href="#portfolio">CANVA</a></li>
-                        <li><a href="#portfolio">Illustrator</a></li>
-                        <li><a href="#portfolio">InDesign</a></li>
-                      </ul>
-                    </li>
-                    <li class="has-children">
-                      <a href="#">Video Editing</a>
-                      <ul class="dropdown">
-                        <li><a href="https://www.youtube.com/results?search_query=medindia4u+pvt+ltd">Samples</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#"
-              class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-
+    <header class="modern-header">
+      <div class="modern-logo">
+        <img src="images/cm-logo.png" alt="CM Logo">
+        <div class="logo-text">
+          <h2>CHANDRIKA MOHAN</h2>
+          <p>Graphic Designer</p>
         </div>
       </div>
 
+      <nav class="modern-nav">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn-lets-work">
+        Let's Work Together
+        <i data-lucide="arrow-right"></i>
+      </a>
     </header>
 
 
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_2.jpg);" data-aos="fade" id="home">
-
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-
-
-          <div class="col-md-8 mt-lg-5 text-center">
-            <h1 class="text-uppercase" data-aos="fade-up">Hi, I am Chandrika Mohan</h1>
-            <p class="mb-5 desc" data-aos="fade-up" data-aos-delay="100">
-              “I don’t just design — I create visual experiences that speak.”<br>
-              I can give your business a new Creative start right away!
-            </p>
-            <div data-aos="fade-up" data-aos-delay="100">
-              <a href="#contact" class="btn smoothscroll btn-primary mr-2 mb-2">Get In Touch</a>
-            </div>
+    <section class="premium-hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-inner">
+        <div class="hero-left" data-aos="fade-right">
+          <span class="hello">HELLO, I'M</span>
+          <h1>CHANDRIKA<br><span>MOHAN</span></h1>
+          <span class="script-font">Graphic Designer</span>
+          <p class="desc">
+            I don’t just design — I create visual experiences that speak.
+            I can give your business a new creative start right away!
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-gradient">
+              Get In Touch
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#portfolio" class="view-work">
+              <div class="play-icon">
+                <i data-lucide="play" fill="currentColor"></i>
+              </div>
+              View My Work
+            </a>
           </div>
+        </div>
 
+        <div class="hero-right" data-aos="fade-left">
+          <div class="abstract-logo">CM</div>
         </div>
       </div>
 
-      <a href="#about" class="mouse smoothscroll">
-        <span class="mouse-icon">
-          <span class="mouse-wheel"></span>
-        </span>
-      </a>
-    </div>
+      <div class="service-bar" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item">
+          <div class="s-icon"><i data-lucide="pen-tool"></i></div>
+          <div class="s-text">
+            <h4>Brand Identity</h4>
+            <p>Unique identities that make your brand unforgettable.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="s-icon"><i data-lucide="monitor"></i></div>
+          <div class="s-text">
+            <h4>Web Design</h4>
+            <p>Modern, responsive websites that look great everywhere.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="s-icon"><i data-lucide="box"></i></div>
+          <div class="s-text">
+            <h4>UI/UX Design</h4>
+            <p>User-centered designs that deliver seamless experiences.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="s-icon"><i data-lucide="image"></i></div>
+          <div class="s-text">
+            <h4>Print Design</h4>
+            <p>Eye-catching prints that communicate your message.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="s-icon"><i data-lucide="share-2"></i></div>
+          <div class="s-text">
+            <h4>Social Media</h4>
+            <p>Scroll-stopping visuals that grow your online presence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <div class="site-section cta-big-image" id="about">
@@ -258,118 +255,103 @@
 
 
 
-    <section class="site-section border-bottom bg-light" id="services">
+    <section class="modern-services" id="services">
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade">
-            <h2 class="section-title mb-3">My Services</h2>
-          </div>
+        <div class="section-header" data-aos="fade-up">
+          <span class="sub-header">Expertise • Quality • Innovation</span>
+          <h2 class="main-title">My Services</h2>
         </div>
-        <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-head"></span></div>
-              <div>
-                <h3>Graphic Design</h3>
-                <ul class="list-unstyled ul-check success">
-                  <li>E-commerce Listing images</li>
-                  <li>E-commerce A+ content</li>
-                  <li>Creating website icons</li>
-                  <li>Social media posters</li>
-                  <li>Banners, flyers, packing design and printing works</li>
-                </ul>
-              </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Graphic Design -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <i data-lucide="palette"></i>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-settings"></span></div>
-              <div>
-                <h3>Shopify</h3>
-                <p></p>
-                <ul class="list-unstyled ul-check success">
-                  <li>Uploading product images</li>
-                  <li>Write descriptions, prices, variants</li>
-                  <li>Upldating homepage banners</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!--<div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-startup"></span></div>
-              <div>
-                <h3>Basics of ANgular</h3>
-                <p></p>
-                  <ul class="list-unstyled ul-check success">
-                    <li>Implementing modules, </li>
-                    <li>Creating custom directives, decorators,</li>
-                    <li>Routing Links. </li>
-                  </ul>
-              </div>
-            </div>
-          </div>-->
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-graphic-design"></span></div>
-              <div>
-                <h3>UI UX Design</h3>
-                <ul class="list-unstyled ul-check success">
-                  <li>CANVA</li>
-                  <li>FIGMA</li>
-                  <li>Wireframe</li>
-                  <li>Prototype</li>
-                  <li>Mockups</li>
-                  <li>FIGMA to HTML Conversion</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-settings"></span></div>
-              <div>
-                <h3>Web Design</h3>
-                <ul class="list-unstyled ul-check success">
-                  <li>Responsive website design</li>
-                  <li>Testing performance of website</li>
-                  <li>Optimization</li>
-                  <li>New template design</li>
-                  <li>Converting PSD to HTML code</li>
-                </ul>
-              </div>
-            </div>
+            <h3>Graphic Design</h3>
+            <ul class="service-list">
+              <li><i data-lucide="chevron-right"></i> E-commerce Listing images</li>
+              <li><i data-lucide="chevron-right"></i> E-commerce A+ content</li>
+              <li><i data-lucide="chevron-right"></i> Social media posters</li>
+              <li><i data-lucide="chevron-right"></i> Banners & flyers</li>
+              <li><i data-lucide="chevron-right"></i> Package design</li>
+            </ul>
           </div>
 
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-idea"></span></div>
-              <div>
-                <h3>Template Design</h3>
-                <ul class="list-unstyled ul-check success">
-                  <li>E-Mail template design</li>
-                  <li>Website template design</li>
-                </ul>
-              </div>
+          <!-- Card 2: UI/UX Design -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <i data-lucide="layers"></i>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-smartphone"></span></div>
-              <div>
-                <h3>Responsive Design</h3>
-                <ul class="list-unstyled ul-check success">
-                  <li>Responsive website design</li>
-                  <li>PSD to HTML Conversion</li>
-                  <li>Bootstrap Framework</li>
-                  <li>Custom media queries</li>
-                </ul>
-              </div>
-            </div>
+            <h3>UI/UX Design</h3>
+            <ul class="service-list">
+              <li><i data-lucide="chevron-right"></i> Wireframing & Prototyping</li>
+              <li><i data-lucide="chevron-right"></i> High-fidelity Mockups</li>
+              <li><i data-lucide="chevron-right"></i> User Interface Design</li>
+              <li><i data-lucide="chevron-right"></i> User Experience Strategy</li>
+              <li><i data-lucide="chevron-right"></i> Icon & Asset Creation</li>
+            </ul>
           </div>
 
+          <!-- Card 3: Web Design -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i data-lucide="monitor"></i>
+            </div>
+            <h3>Web Design</h3>
+            <ul class="service-list">
+              <li><i data-lucide="chevron-right"></i> PSD to HTML Conversion</li>
+              <li><i data-lucide="chevron-right"></i> Bootstrap Website Design</li>
+              <li><i data-lucide="chevron-right"></i> Custom CSS Development</li>
+              <li><i data-lucide="chevron-right"></i> Responsive Layouts</li>
+              <li><i data-lucide="chevron-right"></i> Landing Page Design</li>
+            </ul>
+          </div>
 
+          <!-- Card 4: Shopify Management -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <i data-lucide="shopping-cart"></i>
+            </div>
+            <h3>Shopify</h3>
+            <ul class="service-list">
+              <li><i data-lucide="chevron-right"></i> Product Image Uploads</li>
+              <li><i data-lucide="chevron-right"></i> Descriptions & SEO</li>
+              <li><i data-lucide="chevron-right"></i> Variant Management</li>
+              <li><i data-lucide="chevron-right"></i> Homepage Banner Updates</li>
+              <li><i data-lucide="chevron-right"></i> Store Maintenance</li>
+            </ul>
+          </div>
+
+          <!-- Card 5: Website Maintenance -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <i data-lucide="settings"></i>
+            </div>
+            <h3>Maintenance</h3>
+            <ul class="service-list">
+              <li><i data-lucide="chevron-right"></i> Design Updates</li>
+              <li><i data-lucide="chevron-right"></i> Speed Optimization</li>
+              <li><i data-lucide="chevron-right"></i> Performance Tuning</li>
+              <li><i data-lucide="chevron-right"></i> Content Management</li>
+              <li><i data-lucide="chevron-right"></i> Security Checks</li>
+            </ul>
+          </div>
+
+          <!-- Card 6: Social Media -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i data-lucide="share-2"></i>
+            </div>
+            <h3>Social Media</h3>
+            <ul class="service-list">
+              <li><i data-lucide="chevron-right"></i> Content Creation</li>
+              <li><i data-lucide="chevron-right"></i> Visual Branding</li>
+              <li><i data-lucide="chevron-right"></i> Engagement Post Design</li>
+              <li><i data-lucide="chevron-right"></i> Ad Creative Design</li>
+              <li><i data-lucide="chevron-right"></i> Story & Reel Assets</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
