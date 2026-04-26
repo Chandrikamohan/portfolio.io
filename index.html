@@ -449,7 +449,7 @@
                   <span class="category-tag">Web Design</span>
                 </div>
                 <div class="card-footer">
-                  <a href="https://www.mohanfoundation.org/" class="arrow-link fancybox" data-fancybox="gallery2">
+                  <a href="https://www.mohanfoundation.org/" target="_blank" class="arrow-link">
                     <i data-lucide="arrow-up-right"></i>
                   </a>
                 </div>
@@ -497,19 +497,39 @@
             </div>
           </div>
 
-          <!-- Item 7: Itech Solutions -->
+          <!-- Item 7: medinida -->
           <div class="item webdesign col-sm-6 col-md-4 col-lg-3">
             <div class="portfolio-card">
               <div class="card-image">
-                <img src="images/wd3.jpg" alt="Itech Solutions">
+                <img src="images/medinida.png" alt="Medinida 4u Pvt Ltd">
               </div>
               <div class="card-content">
                 <div class="card-info">
-                  <h3>Itech Solutions</h3>
+                  <h3>Medindia Pvt Ltd</h3>
                   <span class="category-tag">Web Design</span>
                 </div>
                 <div class="card-footer">
-                  <a href="images/wd3.jpg" class="arrow-link fancybox" data-fancybox="gallery2">
+                  <a href="https://www.medindia.net/index.htm" target="_blank" class="arrow-link">
+                    <i data-lucide="arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7: Domventas -->
+          <div class="item webdesign col-sm-6 col-md-4 col-lg-3">
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img src="images/domventas.png" alt="Domventas Pvt Ltd">
+              </div>
+              <div class="card-content">
+                <div class="card-info">
+                  <h3>Domventas Pvt Ltd</h3>
+                  <span class="category-tag">Web Design</span>
+                </div>
+                <div class="card-footer">
+                  <a href="https://domventas.de/en" target="_blank" class="arrow-link">
                     <i data-lucide="arrow-up-right"></i>
                   </a>
                 </div>
@@ -737,25 +757,6 @@
             </div>
           </div>
 
-          <!-- Item 19 -->
-          <div class="item figma col-sm-6 col-md-4 col-lg-3">
-            <div class="portfolio-card">
-              <div class="card-image">
-                <img src="images/figma2.jpg" alt="Project">
-              </div>
-              <div class="card-content">
-                <div class="card-info">
-                  <h3>E-commerce UI</h3>
-                  <span class="category-tag">Figma</span>
-                </div>
-                <div class="card-footer">
-                  <a href="images/figma2.jpg" class="arrow-link fancybox" data-fancybox="gallery2">
-                    <i data-lucide="arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -845,7 +846,14 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
-    lucide.createIcons();
+    // Ensure icons are created after DOM is fully loaded and libraries are ready
+    document.addEventListener('DOMContentLoaded', function () {
+      lucide.createIcons();
+    });
+    // Fallback for icons that might be rendered later
+    window.addEventListener('load', function () {
+      lucide.createIcons();
+    });
   </script>
 </body>
 
