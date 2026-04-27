@@ -307,8 +307,6 @@ jQuery(document).ready(function($) {
 
   var siteScroll = function() {
 
-  	
-
   	$(window).scroll(function() {
 
   		var st = $(this).scrollTop();
@@ -319,10 +317,68 @@ jQuery(document).ready(function($) {
   			$('.js-sticky-header').removeClass('shrink');
   		}
 
-  	}) 
+  	});
 
   };
   siteScroll();
+
+  // --- Modern Navbar Scroll Spy ---
+  var modernNavScrollSpy = function() {
+    var navLinks = $('.modern-nav a[href^="#"]');
+    var sections = [];
+
+    // Build section list from nav links
+    navLinks.each(function() {
+      var target = $(this.hash);
+      if (target.length) {
+        sections.push({ link: $(this), section: target });
+      }
+    });
+
+    // Smooth scroll for modern nav links
+    navLinks.on('click', function(e) {
+      var hash = this.hash;
+      if ($(hash).length) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top - 80
+        }, 600, 'easeInOutExpo');
+      }
+    });
+
+    // Update active link on scroll
+    $(window).on('scroll.modernspy', function() {
+      var scrollPos = $(this).scrollTop() + 120; // offset for fixed header
+
+      // Find which section is currently in view
+      var currentSection = null;
+      $.each(sections, function(i, item) {
+        var sectionTop = item.section.offset().top;
+        var sectionBottom = sectionTop + item.section.outerHeight();
+        if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+          currentSection = item;
+        }
+      });
+
+      // If near the very bottom of the page, mark last link active
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 10) {
+        currentSection = sections[sections.length - 1];
+      }
+
+      if (currentSection) {
+        navLinks.removeClass('active');
+        currentSection.link.addClass('active');
+      } else if ($(this).scrollTop() < 100) {
+        // At the very top — activate Home
+        navLinks.removeClass('active');
+        navLinks.first().addClass('active');
+      }
+    });
+
+    // Trigger once on load to set initial state
+    $(window).trigger('scroll.modernspy');
+  };
+  modernNavScrollSpy();
 
 
   var siteIstotope = function() {

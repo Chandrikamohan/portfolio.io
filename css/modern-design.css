@@ -89,7 +89,13 @@ body.dark-theme {
   transform: translateX(-50%);
 }
 
-.modern-nav a:hover::after, .modern-nav a.active::after {
+.modern-nav a:hover,
+.modern-nav a.active {
+  color: var(--neon-blue);
+}
+
+.modern-nav a:hover::after,
+.modern-nav a.active::after {
   width: 100%;
 }
 
