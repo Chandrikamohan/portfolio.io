@@ -360,6 +360,12 @@ body.dark-theme {
   gap: 10px;
 }
 
+#portfolio .filter-btn i,
+#portfolio .filter-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
 #portfolio .filter-btn.active {
   background: var(--neon-blue);
   color: #000;
@@ -519,6 +525,12 @@ body.dark-theme {
   transition: var(--transition);
 }
 
+.service-card .icon-box i,
+.service-card .icon-box svg {
+  width: 32px;
+  height: 32px;
+}
+
 .service-card:hover .icon-box {
   background: var(--neon-blue);
   color: #000;
@@ -551,7 +563,8 @@ body.dark-theme {
   line-height: 1.5;
 }
 
-.service-card .service-list li i {
+.service-card .service-list li i,
+.service-card .service-list li svg {
   color: var(--neon-blue);
   width: 14px;
   height: 14px;
@@ -688,7 +701,8 @@ body.dark-theme {
   margin: 0 5px;
 }
 
-.dock-item i {
+.dock-item i,
+.dock-item svg {
   width: 22px;
   height: 22px;
   transition: transform 0.4s ease;
@@ -795,10 +809,12 @@ body.dark-theme {
   color: #777;
 }
 
-.footer-contact-info i {
-  width: 16px;
-  height: 16px;
+.footer-contact-info i,
+.footer-contact-info svg {
+  width: 18px;
+  height: 18px;
   color: var(--neon-blue);
+  stroke: var(--neon-blue);
 }
 
 .footer-contact-info a {
@@ -807,6 +823,7 @@ body.dark-theme {
 
 .footer-contact-info a:hover {
   color: var(--neon-blue) !important;
+}
 
 .footer-bottom {
   margin-top: 80px;
